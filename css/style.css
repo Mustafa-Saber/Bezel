@@ -1,0 +1,592 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: teal;
+  height: 4000px;
+  box-sizing: border-box;
+}
+
+.btn-color {
+  background-color: #00c3da;
+}
+
+.text-color {
+  color: #00c3da;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+/* Start style navbar  */
+
+nav {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.nav-item {
+  padding: 0 0.5rem;
+}
+
+.nav-item a {
+  color: white !important;
+}
+
+.lis-icon::before {
+  content: "";
+  border-left: 2px solid white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .lis-icon::before {
+    border-left: none;
+  }
+}
+/* style slide  button  */
+
+.but-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translatex(-35%);
+}
+
+.but-right {
+  position: absolute;
+  top: 5%;
+  right: 0;
+}
+
+.parent-butt {
+  position: relative;
+}
+
+.parent-butt .back {
+  position: absolute;
+  inset: 0 110% 0 0;
+  background-color: white !important;
+  transition: right 1s;
+}
+
+.parent-butt:hover .back {
+  right: 0 !important;
+}
+
+.btt-slid {
+  background-image: none !important;
+  border: 2px solid white;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btt-slid i {
+  position: relative;
+  z-index: 10;
+  transition: color 0.8;
+  font-size: 1.6rem;
+}
+
+.parent-butt:hover i {
+  color: rgb(75, 71, 71);
+}
+/* Start slide label  */
+
+.carousel-caption {
+  animation: h1 5s ease;
+  visibility: visible;
+}
+
+@keyframes h1 {
+  0% {
+    visibility: hidden;
+  }
+  30% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+h1 {
+  font-size: 5.5rem;
+  animation: h1-obs 4s;
+  margin-bottom: 1rem;
+  animation: h1-scale 2s ease-in 1s;
+}
+
+@keyframes h1-obs {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes h1-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+header h4 {
+  animation: h4-obs 4s ease-in;
+}
+
+@keyframes h4-obs {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+}
+
+.but-key {
+  animation: but-obs 4s ease-in;
+}
+
+@keyframes but-obs {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+/* button slide bottom   */
+
+.btn-slied {
+  margin-left: 0.5rem;
+  padding: 0.6rem 1.7rem;
+  font-size: 1.3rem;
+}
+
+.btn-slied-1 {
+  background-color: #00c3da;
+  border: 1px solid #00c3da;
+  color: white;
+}
+
+.btn-slied-1:hover {
+  color: white !important;
+}
+
+.btn-slied-2 {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-slied-2:hover {
+  background: white;
+}
+/* End style navbar  */
+/* Start style header  */
+/* Start style About  */
+
+#about .title-about p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+#about .title-about span {
+  color: #00c3da !important;
+  /* position: relative; */
+}
+
+#about .title-about p span::before {
+  content: "";
+  animation: span-title 8s infinite ease;
+}
+
+@keyframes span-title {
+  2% {
+    content: "s";
+  }
+  4% {
+    content: "so";
+  }
+  6% {
+    content: "sof";
+  }
+  8% {
+    content: "soft";
+  }
+  10% {
+    content: "softw";
+  }
+  12% {
+    content: "softwa";
+  }
+  14% {
+    content: "softwar";
+  }
+  16% {
+    content: "software";
+  }
+  18% {
+    content: "softwares";
+  }
+  20% {
+    content: "software";
+  }
+  22% {
+    content: "softwar";
+  }
+  24% {
+    content: "softwar";
+  }
+  26% {
+    content: "softwa";
+  }
+  28% {
+    content: "softw";
+  }
+  30% {
+    content: "soft";
+  }
+  32% {
+    content: "sof";
+  }
+  34% {
+    content: "so";
+  }
+  36% {
+    content: "s";
+  }
+  38% {
+    content: "";
+  }
+  40% {
+    content: "a";
+  }
+  42% {
+    content: "ap";
+  }
+  44% {
+    content: "app";
+  }
+  46% {
+    content: "apps";
+  }
+  48% {
+    content: "app";
+  }
+  50% {
+    content: "ap";
+  }
+  52% {
+    content: "a";
+  }
+  54% {
+    content: "";
+  }
+  56% {
+    content: "w";
+  }
+  58% {
+    content: "we";
+  }
+  60% {
+    content: "web";
+  }
+  62% {
+    content: "webs";
+  }
+  64% {
+    content: "websi";
+  }
+  66% {
+    content: "websit";
+  }
+  68% {
+    content: "websit";
+  }
+  70% {
+    content: "websites";
+  }
+  72% {
+    content: "websites";
+  }
+  74% {
+    content: "website";
+  }
+  76% {
+    content: "websit";
+  }
+  78% {
+    content: "websi";
+  }
+  80% {
+    content: "webs";
+  }
+  82% {
+    content: "web";
+  }
+  84% {
+    content: "we";
+  }
+  86% {
+    content: "w";
+  }
+  86% {
+    content: "";
+  }
+}
+
+#about button {
+  padding: 0.5rem 1.5rem;
+}
+
+#about button:hover {
+  background-color: #000;
+  color: white;
+}
+/* End style About  */
+/* Star style Team  */
+
+.title-section h2 {
+  font-size: 4.2rem;
+  position: relative;
+}
+
+.title-section h2::before {
+  content: attr(data-h2);
+  position: absolute;
+  bottom: 15%;
+  right: 50%;
+  color: rgba(0, 0, 0, 0.15);
+  font-size: 6.2rem;
+}
+
+.title-section hr {
+  width: 40px;
+  border-bottom: solid #000 2px;
+  color: #000;
+}
+
+.title-section:hover hr {
+  width: 80px;
+}
+/* style  card  */
+
+.card-body {
+  background-color: rgba(0, 195, 218, 0.9);
+  border-radius: 5px;
+  inset: 60px 0 0 0;
+  opacity: 0;
+  transition: opacity 0.3s, top 1s;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+  top: 0;
+}
+
+.card-body i {
+  padding-right: 0.8rem;
+}
+/* End style Team  */
+/* Srart style services  */
+
+#services {
+  background-color: #636363;
+  color: white;
+}
+
+#services h4 {
+  font-size: 1.2rem;
+}
+
+#services h2 {
+  position: relative;
+}
+
+#services h2::before {
+  content: attr(data-to);
+  font-size: 2em;
+  position: absolute;
+  z-index: 1;
+  top: -0.5em;
+  left: -0.15em;
+  opacity: 0.06;
+  /* text-align: center; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+#services ul li {
+  padding: 0.5rem 0;
+}
+
+#services ul li i {
+  padding-right: 0.5rem;
+}
+/* End style services  */
+/* *****************************  */
+/* ******************  */
+/* Start style prices  */
+
+#prices {
+  background-color: #f7f7f7;
+  padding: 2em;
+}
+
+#prices .item-prices {
+  max-width: 400px !important;
+  margin: auto;
+}
+
+#prices .prices-ineer {
+  padding: 3rem 2.2rem;
+  margin: 50px auto 25px;
+  box-shadow: 0 0 51px rgb(0 0 0 / 5%);
+}
+
+#prices .prices-mark {
+  transform: scale(1.1);
+  position: relative;
+}
+
+#prices .prices-mark .p-value {
+  padding: 0.1rem 0.4rem;
+  border-radius: 2rem;
+}
+
+#prices .item-prices h2 {
+  font-size: 3.4rem;
+  font: 400 !important;
+  letter-spacing: -3px;
+}
+
+#prices .item-prices h2 span {
+  font-size: 1.1rem;
+  vertical-align: top;
+}
+
+#prices .item-prices a:hover {
+  bottom: 2px;
+}
+/* End style prices  */
+/* Start style slide */
+
+#slide {
+  background-color: #f7f7f7;
+}
+
+.img-slide {
+  width: 15%;
+  position: absolute;
+  top: -13%;
+}
+
+.carousel-indicators .butt-slide-2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .butt-slide-2.active {
+  background-color: #00c3da !important;
+}
+
+#slide button .bg-tr {
+  background-image: none !important;
+}
+
+#slide button .bg-tr-1:hover {
+  position: relative;
+  right: 5px;
+}
+
+#slide button .bg-tr-2:hover {
+  position: relative;
+  left: 5px;
+}
+/* End style slide  */
+/* Start style contact  */
+
+#contact {
+  background-color: #f7f7f7;
+}
+/*                 
+                .mapouter::before {
+                    content: "";
+                    position: absolute;
+                    inset: 0 0 0 0;
+                    background-color: rgba(0, 0, 0, 0.4);
+                }
+                 */
+
+#contact .title-contact h2::before {
+  content: attr(data-to);
+  font-size: 2em;
+  position: absolute;
+  z-index: 1;
+  top: -0.5em;
+  left: -0.15em;
+  opacity: 0.06;
+}
+/* End style contact  */
+/* ******************************** */
+/*     
+    /* h1 {
+        animation: h1 2s ease .5s;
+    }
+    
+ 
+    /* ******************************  */
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+    font: 200;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+}
